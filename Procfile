@@ -1,1 +1,1 @@
-web: node web.js
+web: node production/src/js/app.min.js
