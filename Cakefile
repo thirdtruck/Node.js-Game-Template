@@ -3,10 +3,10 @@ fs     = require 'fs'
 util   = require 'util'
 uglify = require './node_modules/uglify-js'
 
-prodSrcCoffeeDir     = 'production/src/coffee-script'
+prodSrcCoffeeDir     = 'src'
 testSrcCoffeeDir     = 'test/src/coffee-script'
 
-prodTargetJsDir      = 'production/src/js'
+prodTargetJsDir      = 'public'
 testTargetJsDir      = 'test/src/js'
 
 prodTargetFileName   = 'app'
