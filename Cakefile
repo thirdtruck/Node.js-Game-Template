@@ -20,6 +20,7 @@ prodCoffeeOpts = "--bare --output #{prodTargetJsDir} --compile #{prodTargetCoffe
 testCoffeeOpts = "--output #{testTargetJsDir}"
 
 prodCoffeeFiles = [
+    'game-server'
     'web'
 ]
 
