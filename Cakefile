@@ -1,13 +1,15 @@
+# Based on https://github.com/krismolendyke/InstantJasmineCoffee/
+
 fs     = require 'fs'
 {exec} = require 'child_process'
 util   = require 'util'
 uglify = require './node_modules/uglify-js'
 
 prodSrcCoffeeDir     = 'src'
-testSrcCoffeeDir     = 'test/src/coffee-script'
+testSrcCoffeeDir     = 'test/coffee-script'
 
 prodTargetJsDir      = 'public'
-testTargetJsDir      = 'test/src/js'
+testTargetJsDir      = 'test/js'
 
 prodTargetFileName   = 'app'
 prodTargetCoffeeFile = "#{prodSrcCoffeeDir}/#{prodTargetFileName}.coffee"

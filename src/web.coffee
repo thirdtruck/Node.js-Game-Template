@@ -2,8 +2,11 @@ express = require 'express'
 
 app = express.createServer express.logger()
 
+app.use app.router
+app.use express.static __dirname + '/static'
+
 app.get '/', (request, response) ->
-	response.send 'Hello, Latte-fied World!'
+	response.send "Hello, Latte-fied World!"
 
 port = process.env.PORT or 3000
 
